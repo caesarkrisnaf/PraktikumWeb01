@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Packer</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "darkblue";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+
+        function imagepicker() {
+            const list_image = ["jihyo.png", "tzuyu.png", "mina.png", "nayeon.png",
+                "sana.png", "dahyun.png", "jungyeon.png", "chaeyoung.png", "momo_hira.png"]
+            let pilihan = document.getElementById("option");
+
+            if (pilihan.value == "Jihyo") {
+                let select = list_image[0];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Jihyo.png")
+            }
+
+
+            if (pilihan.value == "Tzuyu") {
+                let select = list_image[1];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Tzuyu.png")
+            }
+
+            if (pilihan.value == "Mina") {
+                let select = list_image[2];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Mina.png")
+            }
+
+            if (pilihan.value == "Nayeon") {
+                let select = list_image[3];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Nayeon.png")
+            }
+
+            if (pilihan.value == "Sana") {
+                let select = list_image[4];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Sana.png")
+            }
+
+            if (pilihan.value == "Dahyun") {
+                let select = list_image[5];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Dahyun.png")
+
+            }
+
+            if (pilihan.value == "Jungyeon") {
+                let select = list_image[6];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Jungyeon.png")
+
+            }
+
+            if (pilihan.value == "Chaeyoung") {
+                let select = list_image[7];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Chaeyoung.png")
+
+            }
+
+            if (pilihan.value == "MomoHira") {
+                let select = list_image[8];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Momo Hira.png")
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home">
+        <h1>Welcome to Girlband Twice</h1>
+    </a>
+    <hr>
+    <br>
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Gambar</option>
+        <option value="Jihyo">Jihyo</option>
+        <option value="Tzuyu">Tzuyu</option>
+        <option value="Mina">Mina</option>
+        <option value="Nayeon">Nayeon</option>
+        <option value="Sana">Sana</option>
+        <option value="Dahyun">Dahyun</option>
+        <option value="Jungyeon">Jungyeon</option>
+        <option value="Chaeyoung">Chaeyoung</option>
+        <option value="MomoHira">Momo Hira</option>
+    </select>
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
