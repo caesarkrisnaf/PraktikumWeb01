@@ -1,0 +1,68 @@
+body{
+    background-color: wheat;
+}
+#header{
+
+        background-color: burlywood;
+        text-align: center;
+  }
+  
+h1{
+
+    text-align: center;
+    color:  blue;
+   
+}
+
+blockquote{
+    background-color: gold;
+}
+
+.a-link{
+    margin-left: 45%;
+}
+.gambar{
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.gambar img{
+    box-shadow: 5px 5px 5px black;
+    padding-left:  20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.koleksi {
+    background-color: gold;
+
+}
+.koleksi img{
+    width: 23%;
+    box-shadow: 2px 2px 2px black;
+    padding-left: 4px;
+    border-radius: 3px 3px 3px 3px;
+}
+.promo{
+    color: crimson;
+    text-align: center;
+}
+.promo h3{
+    color: blue;
+}
+
+.promo h4{
+    color:  greenyellow;
+
+}
+
+.promo ol {
+    margin-left: 38%;
+     padding-right: 70%;
+}
+
+.promo ol li{
+    margin-left: 80px;
+    padding: 5px;
+   
+}
